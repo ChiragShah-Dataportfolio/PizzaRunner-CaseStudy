@@ -1,4 +1,4 @@
-
+DROP TABLE IF EXISTS runners;
 CREATE TABLE runners (
   "runner_id" INTEGER,
   "registration_date" DATE
@@ -91,7 +91,7 @@ VALUES
 DROP TABLE IF EXISTS pizza_toppings;
 CREATE TABLE pizza_toppings (
   "topping_id" INTEGER,
-  "topping_name" varchar(15)
+  "topping_name" varchar(30)
 );
 INSERT INTO pizza_toppings
   ("topping_id", "topping_name")
@@ -218,8 +218,6 @@ from customer_orders
 group by DATEPART(WEEKDAY,order_time)
 
 ------------------Question Set_2------------------
-
---How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
 
 
 --What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
