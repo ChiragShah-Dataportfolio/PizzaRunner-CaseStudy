@@ -80,7 +80,7 @@ VALUES
 DROP TABLE IF EXISTS pizza_recipes;
 CREATE TABLE pizza_recipes (
   "pizza_id" INTEGER,
-  "toppings" varchar(10)
+  "toppings" varchar(30)
 );
 INSERT INTO pizza_recipes
   ("pizza_id", "toppings")
@@ -91,7 +91,7 @@ VALUES
 DROP TABLE IF EXISTS pizza_toppings;
 CREATE TABLE pizza_toppings (
   "topping_id" INTEGER,
-  "topping_name" varchar(30)
+  "topping_name" varchar(15)
 );
 INSERT INTO pizza_toppings
   ("topping_id", "topping_name")
